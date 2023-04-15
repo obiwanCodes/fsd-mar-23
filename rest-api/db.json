@@ -65,6 +65,12 @@
       "name": "san francisco",
       "description": "silicon valley",
       "image": "https://cdn.britannica.com/95/94195-050-FCBF777E/Golden-Gate-Bridge-San-Francisco.jpg"
+    },
+    {
+      "id": "5b725520-dbb0-11ed-8c1c-39cfead1f611",
+      "name": "austin",
+      "description": "the capital of texas",
+      "image": "https://images.contentstack.io/v3/assets/blt00454ccee8f8fe6b/blt32fb0ace9994de49/605c0a9fcc77b20f047aa55d/US_Sacramento_US_Header.jpg"
     }
   ],
   "adventures": [

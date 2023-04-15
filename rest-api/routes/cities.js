@@ -5,7 +5,8 @@ import {
   createCity,
   replaceCity,
   updateCity,
-  deleteCity
+  deleteCity,
+  getAdventuresByCity
 } from "../controllers/cities.js";
 const router = express.Router();
 
@@ -21,5 +22,9 @@ router.put("/", replaceCity);
 router.patch("/:id", updateCity);
 
 router.delete("/:id", deleteCity);
+
+router.get("/:id/adventures", getAdventuresByCity);
+
+// router.post("/:id/adventures", addAdventureToCity);
 
 export default router;

@@ -1,0 +1,1 @@
+DELETE http://localhost:5000/cities/8a453320-db9e-11ed-a28b-a985c1b361ec

@@ -1,0 +1,6 @@
+PATCH http://localhost:5000/cities/d026b4f0-db8e-11ed-bfb5-b38594318c19
+Content-Type: application/json
+
+{
+    "description": "The philadelphia story"
+}

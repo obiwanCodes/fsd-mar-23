@@ -1,0 +1,9 @@
+PUT http://localhost:5000/cities
+content-type: application/json
+
+{
+    "id": "69c0e950-db8f-11ed-8602-5d86dda7d9c",
+    "name": "san francisco",
+    "description": "silicon valley",
+    "image": "https://cdn.britannica.com/95/94195-050-FCBF777E/Golden-Gate-Bridge-San-Francisco.jpg"
+}

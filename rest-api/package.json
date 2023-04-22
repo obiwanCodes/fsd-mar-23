@@ -1,14 +1,14 @@
 {
   "name": "fsd-mar-rest-api",
   "version": "1.0.0",
-  "description": "",
+  "description": "rest api built on top of lowDb",
   "main": "server.js",
   "type": "module",
   "engines": {
     "node": "18.x"
   },
   "scripts": {
-    "start": "nodemon server.js"
+    "start": "node server.js"
   },
   "keywords": [],
   "author": "Aditya Singh",

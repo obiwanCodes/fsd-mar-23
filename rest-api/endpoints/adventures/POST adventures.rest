@@ -1,0 +1,12 @@
+POST http://localhost:5000/adventures
+content-type: application/json 
+
+{
+    "name": "houston rockets game",
+    "costPerHead": 300,
+    "currency": "USD",
+    "image": "https://images.pexels.com/photos/837745/pexels-photo-837745.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+    "duration": 2,
+    "category": "Party",
+    "cityId": "69fd2430-e10f-11ed-b2c0-ff70639d31f0"
+}

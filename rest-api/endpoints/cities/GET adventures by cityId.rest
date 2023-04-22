@@ -1,0 +1,1 @@
+GET http://localhost:5000/cities/t632tgy-d62e-11ed-8fdb-bfb9445070db/adventures

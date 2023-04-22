@@ -6,8 +6,9 @@ import {
   replaceCity,
   updateCity,
   deleteCity,
-  getAdventuresByCity
+  getAdventuresByCityId,
 } from "../controllers/cities.js";
+
 const router = express.Router();
 
 // '/' represents the basepath of this routes file -> '/cities'
@@ -23,7 +24,7 @@ router.patch("/:id", updateCity);
 
 router.delete("/:id", deleteCity);
 
-router.get("/:id/adventures", getAdventuresByCity);
+router.get("/:id/adventures", getAdventuresByCityId);
 
 // router.post("/:id/adventures", addAdventureToCity);
 

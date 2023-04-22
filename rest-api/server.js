@@ -1,6 +1,7 @@
 import express from "express";
 import cityRoutes from "./routes/cities.js";
 import adventureRoutes from "./routes/adventures.js";
+import adventureDetailRoutes from "./routes/adventureDetails.js";
 import bodyParser from "body-parser";
 
 import { join, dirname } from "node:path";
@@ -30,6 +31,8 @@ app.use(bodyParser.json());
 app.use("/cities", cityRoutes);
 
 app.use("/adventures", adventureRoutes);
+
+app.use("/adventures/:id/detail", adventureDetailRoutes);
 
 app.listen(PORT, () =>
   console.log(`The server is running on http://localhost:${PORT}`)

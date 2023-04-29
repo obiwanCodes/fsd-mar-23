@@ -1,0 +1,7 @@
+POST http://localhost:5000/listings
+Content-Type: application/json
+
+{
+    "name": "Good listing",
+    "summary": "Best excellent wonderful listing"
+}

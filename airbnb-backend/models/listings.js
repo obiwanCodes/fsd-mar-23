@@ -1,7 +1,22 @@
 import mongoose from "mongoose";
 
-const listingSchema = mongoose.Schema({});
+const listingSchema = mongoose.Schema({
+  listing_url: {
+    type: String,
+    required: [true, "Please provide listin url to create a stay"],
+  },
+  name: {
+    type: String,
+    required: [true, "Please provide the name of the stay"],
+  },
+  summary: {
+    type: String,
+    required: false,
+  },
+});
 
+const Listing = mongoose.model("Listing", listingSchema);
+export default Listing;
 // {
 //   "_id": {
 //     "$oid": "6444124dca606f2aafcbf171"

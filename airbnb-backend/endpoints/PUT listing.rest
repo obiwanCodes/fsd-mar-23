@@ -1,0 +1,8 @@
+PUT http://localhost:5000/listings/644d48bdfe8f8852048286d5
+Content-Type: application/json
+
+{
+    "listing_url": "bad-listing.com",
+    "name": "too bad listing",
+    "summary": "terrible listing"
+}

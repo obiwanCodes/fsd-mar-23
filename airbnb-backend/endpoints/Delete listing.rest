@@ -1,0 +1,1 @@
+DELETE http://localhost:5000/listings/644d48bdfe8f8852048286d5

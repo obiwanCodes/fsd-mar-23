@@ -11,6 +11,8 @@ app.use(bodyParser.json());
 
 app.get("/test", (req, res) => res.send("API running"));
 
+// app.post('/register', )
+
 app.listen(PORT, () =>
   console.log(`Server is running on http:localhost:${PORT}`)
 );

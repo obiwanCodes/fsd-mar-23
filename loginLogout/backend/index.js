@@ -5,11 +5,13 @@ import dotenv from "dotenv";
 import bcrypt from "bcrypt";
 import User from "./models/userModel.js";
 import jwt from "jsonwebtoken";
+import authenticate from "./auth.js";
+import cors from "cors";
 dotenv.config();
 connectDB();
 const app = express();
 const PORT = 5000;
-
+app.use(cors());
 app.use(bodyParser.json());
 
 app.get("/test", (req, res) => res.send("API running"));
@@ -60,13 +62,25 @@ app.post("/login", async (req, res) => {
       userEmail: user.email,
     },
     process.env.SECRET_KEY,
-    { expiresIn: "2m" }
+    { expiresIn: "2h" }
   );
 
   res.send({
     message: "Login successful",
     email: user.email,
     token,
+  });
+});
+
+app.get("/unsecureEndpoint", (req, res) => {
+  res.send({
+    message: "This endpoint does not require authetication",
+  });
+});
+
+app.get("/secureEndpoint", authenticate, (req, res) => {
+  res.send({
+    message: "Successfully called secure endpoint",
   });
 });
 
